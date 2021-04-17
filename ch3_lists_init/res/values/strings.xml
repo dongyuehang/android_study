@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">ch3_lists</string>
+    <string name="title"><u><big>列表控件</big></u></string>
+    <string name="brief">
+       \t列表控件绝对可以称得上是Android中最常用的控件之一，几乎所有应用程序都会用。\n
+       \t由于手机屏幕空间都比较有限，能够一次性在屏幕上显示的内容并不多，当我们的程序中有大量的数据需要展示的时候，就可以借助各种列表控件来实现。\n
+       \t列表控件一般包括ListView，GridView，以及目前用来代替前二者的RecycleView。\n
+    </string>
+    
+    <string name="lists_intro">
+        \t下面以ListView的用法为例，列举了若干例子程序。\n
+        \t阅读代码并尝试完成练习。\n
+    </string>
+    <string name="lists_sche">
+        \t通过示例，总结自定义列表控件的大体使用方式：\n
+        \t1. 获取数据（文件IO、网络、内存或数据库等）\n
+        \t2. 整理数据成为相应的数据结构，一般为键值对的线性结构\n
+        \t3. 数据结构是不能直接给列表控件的，需要建立适配器对象，并赋予数据结构\n
+        \t\t3.1. 可以使用如示例1或2中的类库提供的适配器对象，直接创建并使用\n
+        \t\t3.2. 若希望自行设计列表样式，需要继承BaseAdapter，并重写相关函数，如示例3中。\n
+        \t4. 将适配器对象赋予列表控件，一般是调用setAdapter函数。\n
+    </string>
+</resources>

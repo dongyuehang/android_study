@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="excer2_info">
+        \t学习并参考示例2代码\n
+        \t要求：在点击下面“跳转”按钮后，切换到一个新的界面，界面中的ListView显示效果如下图\n
+    </string>
+    <string name="excer3_info">
+        \t点击下面”跳转“按钮，跳转到一个界面，显示类似于示例3，step3中的内容，可以复制。\n
+        \t然后在示例3中step3的基础上，为列表控件每一项item添加点击事件处理。\n
+        \t点击的反应事件为弹出Toast文本框，也可自定义点击事件处理方式。总之事件的反应要有区分，以体现点击了不同的item。\n
+        \t可以参考Exp3_lists.java中事件处理的代码。\n
+    </string>
+</resources>

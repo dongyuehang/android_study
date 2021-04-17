@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dyh -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exp2_intro"/>
+<!-- Exp1_lists的界面的布局文件，声明了一个listview界面容器，但是没有设定其内部布局 -->
+    <ListView
+        android:id="@+id/mylv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">        
+    </ListView>
+</LinearLayout>
