@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+        
+        <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="15dip"
+	        android:paddingRight="15dip"
+	        android:text="@string/intent_extra" 
+	        android:layout_gravity="center" />
+	    
+	    <View android:layout_width="100dip"
+	        android:layout_height="2dip"
+	        android:background="#FF909090"
+	        android:layout_gravity="center"/>
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="15dip"
+	        android:paddingRight="15dip"
+	        android:text="@string/intent_intro" />
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="15dip"
+	        android:paddingRight="15dip"
+	        android:id="@+id/txtv_sendcode" />
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    <EditText android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:inputType="text"
+	        android:id="@+id/Etxt_msg"
+	        android:hint="Test string"/>
+	    <Button android:layout_width="wrap_content"
+	        android:id="@+id/btn_send"
+	        android:layout_height="wrap_content"
+	        android:text="携带消息" 
+	        android:layout_gravity="center" />
+	    
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    <View android:layout_width="match_parent"
+	        android:layout_height="2dip"
+	        android:background="#FF909090"/>
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="15dip"
+	        android:paddingRight="15dip"
+	        android:text="@string/intent_exerc"/>
+	    <Button android:id="@+id/btn_send_exerc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="练习携带消息" 
+	        android:layout_gravity="center" />
+	    
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    <View android:layout_width="match_parent"
+	        android:layout_height="2dip"
+	        android:background="#FF909090"/>
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="15dip"
+	        android:paddingRight="15dip"
+	        android:text="@string/sample"/>
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    
+	    <TextView android:text="选择你喜欢的APP图标"
+	        android:paddingLeft="15dip"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content" />
+	   <ImageView android:id="@+id/imgicon"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content" 
+	       android:layout_gravity="center"/>
+	   <Button android:id="@+id/btnchoose"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:text="选择图标"
+	       android:layout_gravity="center"/>
+    </LinearLayout>
+    
+
+</ScrollView>

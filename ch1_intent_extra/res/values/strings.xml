@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- *********************send activity********************* -->
+    <string name="app_name">ch1_intent_extra</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="intent_extra"> <big>Intent携带数据 </big></string>
+    <string name="intent_intro">
+        \tIntent再组建之间转达意图，同时可以携带键值对的数据结构，在初始组件中创建Intent对象时，通过调用重载的putExtra函数来实现。\n
+        \t比如在本Activity中可以使用以下代码来设置数据:\n
+    </string>
+    <string name="send_intent_code">
+        1/ Intent it = new Intent(MainActivity.this, NextAct.class);\n\n
+		2/ it.putExtra("msg", "Test string");\n
+    </string>
+    
+    <string name="intent_exerc">
+        \t请自己练习Intent传送数据。注意实现以下要求：\n
+        1)一次传送多个不同的数据，并且让数据类型不同；在另一边接受\n
+        2)尝试用Bundle打包数据，并传送Bundle；在另一边解析Bundle的内容\n
+    </string>
+    
+    <string name="sample">
+        \t <big>一个例子程序，请自行观察执行效果，并根据代码自学。</big>
+    </string>
+    <!-- ********************receive activity********************** -->
+    <string name="intent_recv_intro">
+        \t 在被启动的组件中，Intent通过getIntent函数获取指针(引用)，并调用对应的getExtra函数获取数据\n
+    </string>
+    <string name="rcv_intent_code">
+        1/ String msgstr = getIntent().getStringExtra("msg");\n\n
+		
+		2/ ((TextView)findViewById(R.id.show_msg)).setText(msgstr);\n
+    </string>
+</resources>

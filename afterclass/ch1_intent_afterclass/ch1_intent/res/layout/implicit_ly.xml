@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/intent_implicit"/>
+	    <View android:layout_width="fill_parent"
+	        android:layout_height="2dip"
+	        android:background="#FF909090"/>
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/r_action"/>
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    <Button android:id="@+id/btn_default_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="预定义action"/>
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    
+	    <EditText android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="请输入号码"/>
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#FFEEDFCC"
+            android:text="练习action"/>
+	    <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="练习尝试跳转到一个拨号界面"/>
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    
+	    <View android:layout_width="fill_parent"
+	        android:layout_height="2dip"
+	        android:background="#FF909090"/>
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/r_data"/>
+	    <View android:layout_width="fill_parent"
+	        android:layout_height="2dip"
+	        android:background="#FF909090"/>
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/r_categ"/>
+	    
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ch1_activity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="para_1">
+        <big>Android-Activity</big> \n
+活动代表了一个具有用户界面的单一屏幕，如 Java 的窗口或者帧。Android 的活动是 ContextThemeWrapper 类的子类。\n
+
+如果你曾经用 C,C++ 或者 Java 语言编程，你应该知道这些程序从 main() 函数开始。\n 很类似的，Android 系统初始化它的程序是通过活动中的 onCreate() 回调的调用开始的。存在有一序列的回调方法来启动一个活动，同时有一序列的方法来关闭活动，如下面的活动声明周期图所示：\n
+    </string>
+    <string name="para_2">
+        如图所示，一个activity中定义了7个回调函数来对应生命周期不同状态的改变。\n
+   onCreate()：	这是第一个回调，在活动第一次创建时调用\n
+onStart()：	这个回调在活动为用户可见时被调用\n
+onResume()：	这个回调在应用程序与用户开始可交互的时候调用\n
+onPause()：	被暂停的活动无法接受用户输入，不能执行任何代码。当前活动将要被暂停，上一个活动将要被恢复时调用\n
+onStop()：	当活动不在可见时调用\n
+onDestroy()：当活动被系统销毁之前调用\n
+onRestart()：当活动被停止以后重新打开时调用\n
+    </string>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">ch2_service</string>
+    <string name="title"><u><big>Service</big></u></string>
+    <string name="srv_dyh_intro">
+       \tService(服务)是android提供的组件之一，不具备界面显示相关的功能。往往在service中完成后台服务（音乐，网络，数据存储）等。\n
+	   \tService是一种可以在后台执行长时间运行操作而没有用户界面的应用组件。\n
+	       服务可由其他应用组件启动（如Activity），服务一旦被启动将在后台一直运行，即使启动服务的组件（Activity）已销毁也不受影响。\n
+	   \t 此外，组件可以绑定到服务，以与之进行交互，甚至是执行进程间通信 (IPC)。 \n
+	   \tService也是主线程中运行，因此与UI界面容易产生冲突，所以Service经常与线程配合。\n
+    </string>
+    <string name="basic_qdu_steps">
+       \t <big>创建并启动服务基本步骤</big>: 1.创建java类并继承Service。2.在清单文件中注册。3.重写必要的生命周期函数
+	   4.启动服务与Activiy相同，通过intent并调用startService/bindService函数启动（显式，隐式）"
+    </string>
+</resources>

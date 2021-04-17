@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/title"
+	        android:layout_gravity="center" />
+	    
+	    <View android:layout_width="80dip"
+	        android:layout_height="2dip"
+	        android:layout_gravity="center"
+	        android:background="#FF909090"/>
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#00FFFF"
+	        android:text="@string/srv_dyh_intro" />
+	    
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:id="@+id/imgv"/>
+	    
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    <View android:layout_width="match_parent"
+	        android:layout_height="2dip"
+	        android:layout_gravity="center"
+	        android:background="#FF909090"/>
+	    
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/tv_steps"/>
+	    <Space android:layout_width="match_parent"
+	        android:layout_height="16dip"/>
+	    
+	    <GridLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:columnCount="2"
+	        android:orientation="horizontal"
+	        android:rowCount="1" >
+	        <Button android:text="非绑定"
+	            android:id="@+id/btn_nobind" />
+	        <Button android:text="绑定"
+	            android:layout_gravity="right"
+	            android:id="@+id/btn_bind"/>
+	    </GridLayout>
+	    
+	</LinearLayout>
+</ScrollView>

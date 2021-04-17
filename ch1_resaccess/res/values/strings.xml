@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">ch1_resaccess</string>
+    <string name="para_1"><big><big>Android 资源(Resources)访问</big></big> \n\n
+	有许多东西用来构建一个优秀的 Android 应用程序。除了应用程序的编码，你需要关注各种各样的资源，诸如你用到的各种静态内容，如位图，颜色，布局定义，用户界面字符串，动画等等。这些资源一般放置在项目的 res/ 下独立子目录中。
+	\n这节教程将学习如何来组织应用程序资源，指定替代资源，并在应用程序中访问它们。
+	</string>
+	<string name="para_12">
+	\n<big><big>在eclipse中组织资源</big></big>\n
+	\n你需要将每种资源放置在项目中 res/ 目录的特定子目录下。例如，这是一个简单项目的文件层级：
+	</string>
+	<string name="para_2">
+	    res/ 目录在各种子目录中包含了所有的资源。这里有一个图片资源，两个布局资源和一个字符串资源文件。下表详细的给出了在项目中 res/ 目录里面支持的资源。
+	</string>
+	<string name="para3">
+	    替代资源
+	你的应用程序需要为特定的设备配置提供替代的资源支持。比如说，你需要为不同的屏幕分辨率提供替代的图片资源，为不同的语言提供替代的字符串资源。在运行时，Android 检测当前设备配置，并为应用程序加载合适的资源。
+	要为特定的配置的确定一系列替代资源，遵循如下的步骤：
+	在res/ 下创建一个新的目录，以 resource_name_config_qualifier 的方式命名。这里的 resources_name 是上表中提到的任意资源，如布局、图片等。 qualifier 将确定个性的配置使用哪些资源。你可以查看官方文档来了解不同类型资源的一个完整 qualifier 列表。
+	在这个目录中保存响应的替代资源。这些资源文件必须与下面例子中展示的默认资源文件名一致，然而这些文件将确定的内容进行替代。例如：虽然图片的文件名一样，但是高分辨率的屏幕，图片的分辨率也会高
+	</string>
+	<!-- 
+	<string name=""></string>
+	<string name=""></string>
+	<string name=""></string>
+	<string name=""></string> -->
+
+</resources>

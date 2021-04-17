@@ -1,0 +1,78 @@
+<resources>
+
+    <string name="app_name">ch1_intent</string>
+    <string name="util_intent"><big>Intent主要有以下几种重要用途</big>:\n\n
+1. 启动Activity：可以将Intent对象传递给startActivity()方法或startActivityForResult()方法以启动一个Activity，该Intent对象包含了要启动的Activity的信息及其他必要的数据。\n\n
+2. 启动Service：可以将Intent对象传递给startService()方法或bindService()方法以启动一个Service，该Intent对象包含了要启动的Service的信息及其他必要的数据。\n\n
+3. 发送广播：广播是一种所有App都可以接收的信息。Android系统会发布各种类型的广播，比如发布开机广播或手机充电广播等。我们也可以给其他的App发送广播，可以将Intent对象传递给sendBroadcast()等方法以发送自定义广播。\n
+    </string>
+    <string name="type_intent">
+        <big>有两种类型的Intent</big>：\n explicit(显式)的和implict(隐式)的。\n
+    显式的Intent：如果Intent中明确包含了要启动的组件的完整类名（包名及类名），那么这个Intent就是explict的，即显式的。使用显式Intent最典型的情形是在你自己的App中启动一个组件，因为你自己肯定知道自己的要启动的组件的类名。\n
+    隐式的Intent：如果Intent没有包含要启动的组件的完整类名，那么这个Intent就是implict的，即隐式的。虽然隐式的Intent没有指定要启动的组件的类名，但是一般情况下，隐式的Intent都要指定需要执行的action。一般，隐式的Intent只用在当我们想在自己的App中通过Intent启动另一个App的组件的时候，让另一个App的组件接收并处理该Intent。\n  
+    </string>
+    
+<!-- start******************strings of Implicit_act ************************* -->
+    <string name="intent_implicit"><big>隐式匹配规则</big>
+       \n \t 隐式的Intent：如果Intent没有包含要启动的组件的完整类名，那么这个Intent就是implict的，即隐式的。虽然隐式的Intent没有指定要启动的组件的类名，但是一般情况下，隐式的Intent都要指定需要执行的action。一般，隐式的Intent只用在当我们想在自己的App中通过Intent启动另一个App的组件的时候，让另一个App的组件接收并处理该Intent。\n
+    </string>
+    <string name="r_action">
+        <big>(1)action的匹配规则</big>\n
+        action是一个字符串，如果Intent指明定了action，则目标组件的IntentFilter的action列表中就必须包含有这个action，否则不能匹配。一个Intent Filter中可声明多个action，Intent中的action与其中的任一个action在字符串形式上完全相同（注意，区分大小写，大小写不同但字符串内容相同也会造成匹配失败），action方面就匹配成功。可通过setAction方法为Intent设置action，也可在构造Intent时传入action。<u>需要注意的是，隐式Intent必须指定action</u>\n
+        Android系统预定义了许多action，这些action代表了一些常见的操作。常见action如下:\n
+        Intent.ACTION_VIEW\n
+		Intent.ACTION_DIAL\n
+		Intent.ACTION_SENDTO\n
+		Intent.ACTION_SEND\n
+		Intent.ACTION_WEB_SEARCH\n
+    </string>
+    <string name="r_data">
+        <big>(2)data的匹配规则</big>\n\n
+       \t 如果Intent没有提供type，系统将从data中得到数据类型。和action一样，同action类似，只要Intent的data只要与Intent Filter中的任一个data声明完全相同，data方面就完全匹配成功。\n
+       data由两部分组成：mimeType和URI,不可同时使用 \n
+       mimetype指的是媒体类型：例如imgage/jpeg，auto/mpeg4和viedo/*等，可以表示图片、文本、视频等不同的媒体格式\n
+       URI则由scheme、host、port、path | pathPattern | pathPrefix这4部分组成\n
+    </string>
+    <string name="r_categ">
+        <big>(3)category的匹配规则</big>\n\n
+        \t Intent的action、category属性都是普通的字符串,其中action表示Intent需要完成的一个抽象”动作”,而category则为action添加额外的类别信息,通常action和category一块使用。\n
+        <u>需要指出的是,一个Intent中只能包含一个action属性，但可以包含多个category属性</u>。当程序创建Intent时,该Intent默认启动category常量值为DEFAULT的组件\n
+    </string>
+<!-- end ******************strings of Implicit_act ************************* -->
+
+    <string name="constru_intent">
+        <big>Intent由6部分信息组成</big>：\n Component Name、Action、Data、Category、Extras、Flags。\n\n 根据信息的作用用于，又可分为三类:\n
+a. Component Name、Action、Data、Category为一类，这4中信息决定了Android会启动哪个组件，其中Component Name用于在显式Intent中使用，Action、Data、Category、Extras、Flags用于在隐式Intent中使用。\n
+b. Extras为一类，里面包含了具体的用于组件实际处理的数据信息。\n
+c. Flags为一类，其是Intent的元数据，决定了Android对其操作的一些行为。\n
+    </string>
+    <string name="component_name">
+        <big>Component_name</big>是要启动的组件的名称。\n 如果你想使用显式的Intent，那么你就必须指定该参数，一旦设置了component name，Android会直接将Intent传递给组件名所指定的组件去启动它。如果没有设置component name，那么该Intent就是隐式的，Android系统会根据其他的Intent的信息（例如下面要介绍到的action、data、category等）做一些比较判断决定最终要启动哪个组件。所以，如果你启动一个你自己App中的组件，你应该通过指定component name通过显式Intent去启动它（因为你知道该组件的完整类名）。\n
+需要注意的是，当启动Service的时候，你应该总是指定Component Name。否则，你不确定最终哪个App的哪个组件被启动了，并且用户也看不到哪个Service启动了。\n
+    </string>
+    <string name="arg_action">
+        <big>Action</big>是表示了要执行操作的字符串，比如查看或选择，其对应着Intent Filter中的action标签。\n
+        可以指定你独有的action以便于你的App中的Intent的使用或其他App中通过Intent调用你的App中的组件。Intent类和Android中其他framework级别的一些类也提供了许多已经定义好的具有一定通用意义的action。以下是一些用于启动Activity的常见的action：\n
+        ntent.ACTION_VIEW 其值为 “android.intent.action.VIEW”，当你有一些信息想让通过其他Activity展示给用户的时候，你就可以将Intent的action指定为ACTION_VIEW，比如在一个图片应用中查看一张图片等。\n
+Intent.ACTION_SEND 其值为”android.intent.action.SEND”，该action常用来做“分享”使用，当你有一些数据想通过其他的App（例如QQ、微信、百度云等）分享出去的时候，就可以使用此action构建Intent对象，并将其传递给startActivity()方法.\n
+    </string>
+    <string name="arg_Data">
+        <big>Data</big>是指的是Uri对象和数据的MIME类型，其对应着Intent Filter中的data标签。\n
+        一个完整的Uri由scheme、host、port、path组成，格式是scheme://host:port/path，例如content://com.example.project:200/folder/subfolder/etc。\n Uri就像一个数据链接，组件可以根据此Uri获得最终的数据来源。\n
+    </string>
+    <string name="category">
+        <big>Category</big>包含了关于组件如何处理Intent的一些其他信息，虽然可以在Intent中加入任意数量的category，但是大多数的Intent其实不需要category。\n
+以下是一些常见的category：\n
+
+CATEGORY_BROWSABLE 目标组件会允许自己通过一个链接被一个Web浏览器启动，该链接可能是一个图片链接或e-mail信息等。\n
+
+CATEGORY_LAUNCHER 用于标识Activity是某个App的入口Activity。\n
+
+可以在Intent类中查找到更多预定义的category。\n
+    </string>
+    <string name="Extras">
+        <big>Extras</big>，顾名思义，就是额外的数据信息，Intent中有一个Bundle对象存储着各种键值对，接收该Intent的组件可以从中读取出所需要的信息以便完成相应的工作。有的Intent需要靠Uri携带数据，有的Intent是靠extras携带数据信息。\n
+
+可以通过调用Intent对象的各种重载的putExtra(key, value)方法向Intent中加入各种键值对形式的额外数据。\n 也可以直接创建一个Bundle对象，向该Bundle对象传入很多键值对，然后通过调用Intent对象的putExtras(Bundle)方法将其一块设置给Intent对象中去。\n
+    </string>
+</resources>
