@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--直接使用数组资源给list view添加列表项-->
+<!--设置分割条的颜色-->
+<!--设置分割条的高度-->
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#C4C4C4"
+        android:entries="@array/teacher_name"
+        android:dividerHeight="1dp">
+    </ListView>
+</LinearLayout>

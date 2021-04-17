@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="qdu.mytest.ch3_lists"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".Lists_main">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Exp2_lists"></activity>
+        <activity android:name=".Exp1_lists"></activity>
+        <activity android:name=".Exp3_lists"></activity>
+        <activity android:name=".Excer1_lists"></activity>
+        <activity android:name=".Excer2_lists"></activity>
+        <activity android:name=".Excer3_lists"></activity>
+        
+        <activity android:name="qdu.mytest.ch3_lists.exp1_steps.Exp1_1"></activity>
+        <activity android:name="qdu.mytest.ch3_lists.exp1_steps.Exp1_2"></activity>
+        <activity android:name="qdu.mytest.ch3_lists.exp3_steps.Step1_exp3"></activity>
+        <activity android:name="qdu.mytest.ch3_lists.exp3_steps.Step2_exp3"></activity>
+        <activity android:name="qdu.mytest.ch3_lists.exp3_steps.Step3_exp3"></activity>
+        
+        <activity android:name=".Exp_grid_view"></activity>
+    </application>
+
+</manifest>

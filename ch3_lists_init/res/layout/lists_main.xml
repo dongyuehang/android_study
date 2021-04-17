@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<LinearLayout android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+        <TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/title"
+	        android:gravity="center" />
+	    
+        <!-- hori dyh bar -->        
+        <!-- space -->
+        <Space android:layout_width="match_parent"
+            android:layout_height="16dip"/>
+        
+	    <TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/brief" />	
+
+	    <!-- hori bar --> 
+	    <View android:layout_width="match_parent"
+	        android:layout_height="2dip"
+	        android:background="#9b9b9b"/>       
+        <!-- space -->
+        <Space android:layout_width="match_parent"
+            android:layout_height="16dip"/>
+        
+        <TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lists_intro"/>
+        
+        <!-- hori dyh bar --> 
+	    <View android:layout_width="match_parent"
+	        android:layout_height="2dip"
+	        android:background="#9b9b9b"/>       
+        <!-- space -->
+        <Space android:layout_width="match_parent"
+            android:layout_height="16dip"/>
+        
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_exp1"
+                android:text="示例1"/>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_exp2"
+                android:text="示例2"/>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_exp3"
+                android:text="示例3"/>
+        </LinearLayout>
+        <!-- space -->
+        <Space android:layout_width="match_parent"
+            android:layout_height="16dip"/>
+        <!-- hori bar yuehang--> 
+	    <View android:layout_width="match_parent"
+	        android:layout_height="2dip"
+	        android:background="#9b9b9b"/> 
+	    
+	    <!-- space -->
+        <Space android:layout_width="match_parent"
+            android:layout_height="16dip"/>
+        
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_excer1"
+                android:text="练习1"/>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_excer2"
+                android:text="练习2"/>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_excer3"
+                android:text="练习3"/>
+        </LinearLayout>
+        <!-- space -->
+        <Space android:layout_width="match_parent"
+            android:layout_height="16dip"/>
+        <!-- hori 岳 bar --> 
+	    <View android:layout_width="match_parent"
+	        android:layout_height="2dip"
+	        android:background="#9b9b9b"/>
+	    
+        <!-- space dyh-->
+        <Space android:layout_width="match_parent"
+            android:layout_height="16dip"/>
+        
+        <TextView android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lists_sche"/>
+        
+        <!-- space -->
+        <Space android:layout_width="match_parent"
+            android:layout_height="16dip"/>
+        <!-- hori  bar --> 
+	    <View android:layout_width="match_parent"
+	        android:layout_height="2dip"
+	        android:background="#9b9b9b"/>
+	    <!-- space -->
+        <Space android:layout_width="match_parent"
+            android:layout_height="16dip"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="之前见过的一个界面，采用了GridView"/>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_gv_exp"
+                android:text="另一个例子"/>
+	</LinearLayout>
+</ScrollView>
+
