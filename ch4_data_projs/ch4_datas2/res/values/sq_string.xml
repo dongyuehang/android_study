@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sq_title">
+        <big><b>SQLite Database</b></big>
+    </string>
+    <string name="sq_intro">
+\tSQLite是一款轻型的数据库，是遵守ACID的关联式数据库管理系统，它的设计目标是嵌入式的，而且目前已经在很多嵌入式产品中使用.SQLite占用资源非常的低，在嵌入式设备中，可能只需要几百K的内存。\n
+\tSQLITE能够支持 Windows/Linux/Unix等等主流的操作系统，同时能够跟很多程序语言相结合，比如Tcl、PHP、Java、C++、.Net等，还有ODBC接口，同样比起 Mysql等数据库管理系统来讲，SQLite功能简单，但处理速度较好。\n\n
+    </string>
+</resources>

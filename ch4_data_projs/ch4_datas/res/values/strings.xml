@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">ch4_datas</string>
+    <string name="title"><big><b>安卓数据存储方式</b></big></string>
+    <string name="datas_intro">
+        \tAndroid系统提供了四种存储数据方式。分别为：<b>SharedPreference, SQLite, Content Provider和File I/O</b>。\n
+        \t其中，Content Provider为安卓四大组件之一。安卓系统中，数据基本都是私有的，存放于/data/data程序包下，若要在应用之间共享数据，可以使用Content Provider组件。\n
+        \tSQLite是安卓系统提供的轻量级数据库，支持基本的SQL语法。\n
+        \tSharedPreference是一个格式化数据文件，采用了XML的标记方法。常用于设置参数的存储。\n
+        \t文件I/O是对各操作系统文件模块最基本常见的操作。\n
+    </string>
+</resources>

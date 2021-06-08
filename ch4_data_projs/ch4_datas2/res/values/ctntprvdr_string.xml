@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cp_title">
+        <big><b>ContentProvider</b></big>
+    </string>
+    <string name="cp_intro">
+        \tContentProvider（内容提供者）是Android中的四大组件之一。\n
+        
+        \t主要用于对外共享数据，也就是通过ContentProvider把应用中的数据共享给其他应用访问，其他应用可以通过ContentProvider对指定应用中的数据进行操作。\n
+        &lt;font color="#26A5FF">
+        \tContentProvider分为系统的和自定义的，系统的也就是例如联系人，图片等数据。
+        &lt;/font>\n\n
+    </string>
+    <string name="cp_introcp">
+        \tAndroid提供了一些主要数据类型的&lt;b>ContentProvider&lt;/b>，比如音频、视频、图片和私人通讯录等。可在android.provider包下面找到一些Android提供的ContentProvider。通过获得这些ContentProvider可以查询它们包含的数据，当然前提是已获得适当的读取权限。
+\n\n\t主要方法：\n
+&lt;p>
+        &lt;font color="#26A5FF">
+        public boolean onCreate() &lt;/font> 在创建ContentProvider时调用\n
+&lt;/p>
+&lt;p>
+    &lt;font color="#26A5FF">
+    public Cursor query(Uri, String[], String, String[], String)&lt;/font> 用于查询指定Uri的ContentProvider，返回一个Cursor\n
+&lt;/p>
+&lt;p>
+        &lt;font color="#26A5FF">
+        public Uri insert(Uri, ContentValues)&lt;/font>  用于添加数据到指定Uri的ContentProvider中
+&lt;/p>
+&lt;p>
+        &lt;font color="#26A5FF">
+        public int update(Uri, ContentValues, String, String[])&lt;/font> 用于更新指定Uri的ContentProvider中的数据
+&lt;/p>
+&lt;p>
+        &lt;font color="#26A5FF">
+        public int delete(Uri, String, String[])&lt;/font> 用于从指定Uri的ContentProvider中删除数据
+&lt;/p>
+&lt;p>
+        &lt;font color="#26A5FF">
+        public String getType(Uri) &lt;/font> 用于返回指定的Uri中的数据的MIME类型
+&lt;/p>
+    </string>
+    <string name="cp_intro_CR">
+        \t当外部应用需要对ContentProvider中的数据进行添加、删除、修改和查询操作时，可以使用&lt;b>ContentResolver&lt;/b>类来完成，要获取ContentResolver对象，可以使用Context提供的getContentResolver()方法。\n\n
+        \tContentResolver提供的方法和ContentProvider提供的方法对应的有以下几个方法。\n\n
+&lt;p>&lt;font color="#26A5FF">
+public Uri insert(Uri uri, ContentValues values)&lt;/font> 用于添加数据到指定Uri的ContentProvider中。
+&lt;/p>
+&lt;p>&lt;font color="#26A5FF">
+public int delete(Uri uri, String selection, String[] selectionArgs)&lt;/font> 用于从指定Uri的ContentProvider中删除数据。
+&lt;/p>
+&lt;p>&lt;font color="#26A5FF">
+public int update(Uri uri, ContentValues values, String selection, String[] selectionArgs)&lt;/font> 用于更新指定Uri的ContentProvider中的数据。
+&lt;/p>
+&lt;p>&lt;font color="#26A5FF">
+public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder)&lt;/font> 用于查询指定Uri的ContentProvider。
+&lt;/p>
+    </string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sp_titles">
+        <big><b>Shared Preference</b></big>
+    </string>
+    <string name="sp_contents">
+        \tSharedPreferences是Android平台上一个轻量级的存储类，用来保存应用的一些常用配置.\n
+        \t比如Activity状态，Activity暂停时，将此activity的状态保存到SharedPereferences中；当Activity重载，系统回调方法onSaveInstanceState时，再从SharedPreferences中将值取出。\n\n
+        \t其中的原理是通过Android系统生成一个xml文件保到：/data/data/包名/shared_prefs目录下，类似键值对的方式来存储数据。\n
+        \tSharedpreferences提供了常规的数据类型保存接口比如：int、long、boolean、String、Float、Set和Map这些数据类型。\n
+    </string>
+    <string name="sp_codes1">
+    &lt;p>参数有两个，第一个表示Share文件的名称，不同的名称对应这不同的Share文件，其中的内容也是不同.
+            第二个参数表示操作模式，操作模式有四种：MODE_WORLD_READABLE，MODE_WORLD_WRITEABLE，MODE_PRIVATE和MODE_MULTI_PROCESS.&lt;/p>
+    
+    &lt;p>MODE_PRIVATE：默认操作模式，直接在把第二个参数写0就是默认使用这种操作模式，这种模式表示只有当前的应用程序才可以对当前这个SharedPreferences文件进行读写。&lt;/p>
+    
+    &lt;p>MODE_MULTI_PROCESS：用于多个进程共同操作一个SharedPreferences文件。&lt;/p>
+    &lt;p>MODE_WORLD_WRITEABLE: 数据能被其他应用程序读和写.&lt;/p>
+    &lt;p>MODE_WORLD_READABLE: 数据能被其他应用程序读，但不能写.&lt;/p>
+&lt;p>
+&lt;font color="#26A5FF">
+SharedPreferences sp = context.getSharedPreferences(PREFERENCES_NAME,Context.MODE_PRIVATE);
+&lt;/font>
+&lt;/p>
+&lt;p>获取Editor对象，这个对象用于写入，可理解为编辑&lt;/p>
+&lt;p>
+&lt;font color="#26A5FF">
+SharedPreferences.Editor editor = sp.edit();
+&lt;/font>
+&lt;/p>
+&lt;p>Editor对象有几个方法需要注：clear()，commit()，putXXX(),clear()为清空Share文件中的内容，
+commit()为提交，editor在put值以后，需要调用commit方法才能被真正写入到Share文件中.&lt;/p>
+&lt;p>
+&lt;font color="#26A5FF">
+editor.putString(\"key\", \"value\").commit();
+&lt;/font>
+&lt;/p>
+    </string>
+    <string name="sp_code2">
+        &lt;hr/>
+       &lt;p> 当要取回数据时，先获取对应的Share&lt;/p>
+&lt;p>
+&lt;font color="#26A5FF">
+SharedPreferences sp=context.getSharedPreferences(PREFERENCES_NAME,Context.MODE_PRIVATE);
+&lt;/font>
+&lt;/p>
+
+&lt;p>根据key取出对应的值&lt;/p>
+&lt;p>
+&lt;font color="#26A5FF">
+sp.getString(\"uid\", \"\");
+&lt;/font>
+&lt;/p>
+其中第二个参数为默认值，即当从Share中取不到时，返回这个值,这里会返回一个空串。
+    </string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_contents">
+        <item >第一步 \n 找到windows系统的控制台界面（命令行提示符）</item>
+        <item >第二步 \n 找到安装安卓SDK文件夹下面，platform-tools的子文件夹，并确认该文件夹中包含adb.exe文件</item>
+        <item >第三步 \n 将控制台盘符切换为adb所在盘</item>
+        <item >第四步 \n 赋值adb路径，将控制台切入到该目录下</item>
+        <item >第五步 \n 使用[adb shell]命令进入虚拟机的控制台（命令交互界面）</item>
+        <item >第六步 \n 在虚拟机命令行使用[sqlite3]命令，进入虚拟机系统sqlite数据库</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="datas_topics">
+        <item>Shared Preference</item>
+        <item>File I/O</item>
+        <item>SQLite</item>
+        <item>Content Provider</item>
+    </string-array>
+    <string-array name="sq_topics">
+        <item>如何在安卓shell中操作SQLite</item>
+        <item>APP使用SQLite的例子</item>
+    </string-array>
+</resources>

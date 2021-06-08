@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button android:id="@+id/create_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建/连接数据库" />
+    <TextView android:id="@+id/show_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据库内容为："/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="操作数据库：" />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名："/>
+        <EditText android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年龄： "/>
+        <EditText android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="身高: "/>
+        <EditText android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+    </LinearLayout>
+    <Button android:id="@+id/insert_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="插入记录"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当ID为： "/>
+        <EditText android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+        <Button android:id="@+id/query_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询记录"/>
+        <Button android:id="@+id/delete_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除记录"/>
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_re"
+        android:text="操作结果为："/>
+    
+    <!-- space -->
+    <Space android:layout_width="match_parent"
+        android:layout_height="16dip"/>
+    
+    <!-- hori bar --> 
+    <View android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#9b9b9b"/> 
+        
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exercises"/>
+</LinearLayout>

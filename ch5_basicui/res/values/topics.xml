@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ui_topics">
+        <item >屏幕及适配</item>
+        <item >View类和子类</item>
+        <item >绘制图形</item>
+    </string-array>
+</resources>

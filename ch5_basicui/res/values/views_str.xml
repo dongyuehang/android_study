@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="views_title">
+        <big><b>View和ViewGroup</b></big>
+    </string>
+    <string name="views_intro">
+        \t 在Android APP中，所有的用户界面元素都是由View和ViewGroup的对象构成的。View是绘制在屏幕上的用户能与之交互的一个对象。而ViewGroup则是一个用于存放其他View（和ViewGroup）对象的布局容器！ Android为我们提供了一个View和ViewGroup子类的集合，集合中提供了一些常用的输入控件(比如按钮和文本域)和各种各样的布局模式（比如线性或相对布局） \n\n
+    </string>
+    
+    <string name="views_deeper">
+        \t 在安卓系统中，Window是一个抽象类，提供了各种窗口操作的方法，比如设置背景标题ContentView等等\n
+        \t PhoneWindow则是Window的唯一实现类，它里面实现了各种添加背景主题ContentView的方法，内部含有顶级视图DecorView\n\n
+        
+        \t如图可见，每一个Activity都有一个Window即PhoneWindow，可以通过getWindow函数获取 \n\n
+        
+        \t PhoneWindow之内，首先是DecorView，一个顶级视（View）图容器，继承自View下的FramentLayout，可以设置窗口的属性\n
+        \t 这样界面中其他的View，尤其是我们layout文件中的所有View都相当于其子节点。\n\n
+        
+        \t另外还有ViewRoot、WindowManager和WindowManagerService几个类。大概的关系是:\n\n
+        \t\t ViewRoot是连接了WindowManager和DecorView的桥梁\n\n
+        \t\t DecorView将各个View组件从给WindowManager进行管理\n\n
+        \t\t 在复杂的Window管理过程中包含了这个View的绘制过程，大致包含了measure、layout和draw三个步骤。\n
+        \t一般一个简单的自定义View需要或多或少的涉及这三个过程\n\n
+    </string>
+</resources>

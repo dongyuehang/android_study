@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ui_title"
+        android:gravity="center"/>
+    <!-- space -->
+    <Space android:layout_width="match_parent"
+        android:layout_height="16dip"/>
+    <!-- hori bar --> 
+    <View android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#9b9b9b"/>       
+    <!-- space -->
+    <Space android:layout_width="match_parent"
+        android:layout_height="16dip"/>
+    
+    <ListView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#C4C4C4"
+        android:dividerHeight="1dp"
+        android:entries="@array/ui_topics"
+        android:id="@+id/lv_topics"/>
+
+</LinearLayout>

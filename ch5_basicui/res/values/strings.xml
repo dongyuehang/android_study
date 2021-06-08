@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">ch5_basicui</string>
+    <string name="ui_title">
+        <big><b>Android UI 相关基础</b></big>
+    </string>
+</resources>

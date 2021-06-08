@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">find_sqlite_cmd</string>
+    <string name="exercises">
+        \t当前APP只能创建数据库和数据表。请结合数据库课程的知识，依据界面设置，完成相应的功能包括插入数据，删除数据和查询单个记录。\n
+    </string>
+</resources>

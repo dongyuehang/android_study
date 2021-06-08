@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sp_titles"
+        android:gravity="center"/>
+    
+    <!-- space -->
+    <Space android:layout_width="match_parent"
+        android:layout_height="26dip"/>
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sp_contents"/>
+    <!-- space -->
+    <Space android:layout_width="match_parent"
+        android:layout_height="16dip"/>
+    <!-- hori bar --> 
+    <View android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#9b9b9b"/>
+    <!-- space -->
+    <Space android:layout_width="match_parent"
+        android:layout_height="16dip"/>
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sp_codes1"/>
+    
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sp_codes2"/>
+</LinearLayout>
+</ScrollView>

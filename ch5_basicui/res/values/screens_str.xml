@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screens_title">
+        <big><b>设备屏幕相关</b></big>
+    </string>
+
+    <string name="units_measurement">
+        &lt;p> &lt;big>屏幕参数&lt;/big> &lt;/p>
+        &lt;p> px &lt;/p>
+                      即pixel，像素点。分辨率常表示为长和宽的像素点个数，如1024*768. 另外，dpi也是表示pixel的计数，表示每英寸的像素点个数。&lt;/br>
+        &lt;/br>
+        &lt;p> density &lt;/p>
+                     屏幕密度， 其与dpi的关系为 density = dpi/160. 也相当于1个dp含有的像素个数。&lt;/br>
+        &lt;/br>
+        &lt;p> dp（dip） &lt;/p>
+        density independent pixel的缩写，意为密度无关的像素点。1dp单位在任何尺寸的移动设备上总是表示1/160英寸。&lt;/br>
+                       使用dp的好处是在不同屏幕尺寸、密度情况下能够获得相近比例的界面显示。&lt;/br>
+        &lt;/br>
+        &lt;p> sp &lt;/p>
+        scale-independent pixel的缩写，意为缩放无关的像素点。以dp为基础进行缩放，相当于sp = f * dp, f为大于0的浮点数。通常用来设置屏幕字体。&lt;/br>
+        &lt;/br>
+        
+    </string>
+    
+    <string name="units_trans">
+        &lt;p>dp to px &lt;/p>
+        &lt;font color="#8B7355">
+        px = dp * (dpi/160) = dp * density &lt;/font> &lt;/br>
+       
+        &lt;/br>
+        &lt;p>px to dp&lt;/p>
+        &lt;font color="#8B7355">
+        dp = px * 160 / dpi = px / density &lt;/font> &lt;/br>
+        &lt;/br>
+        
+    </string>
+    
+    <string name="unit_codes">
+        &lt;p> &lt;big>相关类库&lt;/big> &lt;/p>
+Android.util包下的DisplayMetrics类提供了关于设备显示的通用信息，如显示大小、分辨率和字体等。
+&lt;p>获取该类的方法为：&lt;/p>
+        &lt;font color="#26A5FF">
+        metrics = context.getResources().getDisplayMetrics(); &lt;/font> &lt;/br>
+&lt;p>直接从当前组件获取。&lt;/p>
+&lt;p>或者：&lt;/p>
+&lt;font color="#26A5FF">
+metrics = getWindowManager().getDefaultDisplay().getMetrics(new DisplayMetrics()); &lt;/font> 
+&lt;p>从windowmanager的defaultdisplay获取信息，并送入新创建的metrics对象。&lt;/p>
+&lt;p>从metrics对象获取屏幕的长和宽: &lt;/p>
+&lt;font color="#26A5FF">
+w =  metrics.widthPixels;  h = metrics.heightPixels; &lt;/font>
+单位为像素。
+&lt;p>获取当前设备的dpi、density和scaleddensity：&lt;/p>
+&lt;font color="#26A5FF">
+metrics.densityDpi;
+metrics.density;
+metrics.scaledDensity;&lt;/font>
+&lt;p>也可以通过&lt;font color="#26A5FF">metrics.toString() &lt;/font> 直接查看信息集合。&lt;/p>
+    </string>
+</resources>

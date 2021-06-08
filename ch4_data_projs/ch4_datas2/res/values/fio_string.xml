@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fio_info">
+        \t1.当前例子APP实现了将输入文本保存为文件\n
+        \t2.新建一个APP，在“练习”按钮点击后跳转到APP，在示例基础上增加一个按钮，点击后可以实现文件的复制。（复制刚才生成的
+        文件，若没生成文件则不可点击复制）\n
+        \t3.复制成功后，利用同一个广播接收器（Save-BC）进行提示。\n
+        \t4.考虑将I/O放入service，并使用线程。（推荐IntentService）\n
+    </string>
+</resources>
